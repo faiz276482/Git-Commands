@@ -32,7 +32,7 @@ _A list of my commonly used Git commands_
 | `git reset --mixed` | Resets the index but not the working tree (i.e., the changed files are preserved but not marked for commit) and reports what has not been updated. This is the default action.If -N is specified, removed paths are marked as intent-to-add |
 | `git reset --keep` | Resets index entries and updates files in the working tree that are different between <commit> and HEAD. If a file that is different between <commit> and HEAD has local changes, reset is aborted. |
 | `git reset --merge` | Resets the index and updates the files in the working tree that are different between <commit> and HEAD, but keeps those which are different between the index and working tree (i.e. which have changes which have not been added). If a file that is different between <commit> and the index has unstaged changes, reset is aborted.In other words, --merge does something like a git read-tree -u -m <commit>, but carries forward unmerged index entries. |
-| `git reset [-q | --quiet | --no-quiet] [<tree-ish>] [--] <paths>…` | Be quiet, only report errors. The default behavior is set by the reset.quiet config option. --quiet and --no-quiet will override the default behavior. |
+| `git reset [-q / --quiet  /--no-quiet] [<tree-ish>] [--] <paths>…` | Be quiet, only report errors. The default behavior is set by the reset.quiet config option. --quiet and --no-quiet will override the default behavior. |
  
 ### Branching & Merging
  
