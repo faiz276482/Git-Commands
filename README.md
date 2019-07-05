@@ -77,6 +77,7 @@ _A list of my commonly used Git commands_
 | `git log -n <number a>` | view just one change that happeed at ath commit from last commit |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 | `git diff [commitID1] [commitID2]` | Preview changes b/w two commits |
+| `git diff --staged` | Preview changes b/w edited file and the file before editing at the staging area |
 
 
 *If you are interested in learning more commands, have a look at https://git-scm.com/docs*
