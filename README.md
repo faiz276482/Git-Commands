@@ -79,5 +79,11 @@ _A list of my commonly used Git commands_
 | `git diff [commitID1] [commitID2]` | Preview changes b/w two commits |
 | `git diff --staged` | Preview changes b/w edited file and the file before editing at the staging area |
 
+### Patching
+
+| Command | Description |
+| ------- | ----------- |
+| `git rebase` | Reapply commits on top of another base tip |
+
 
 *If you are interested in learning more commands, have a look at https://git-scm.com/docs*
