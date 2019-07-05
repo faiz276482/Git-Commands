@@ -74,7 +74,7 @@ _A list of my commonly used Git commands_
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git log -u` | View changes (detailed) |
-| `git log -n <number a>` | view just one change that happeed at ath commit from last commit |
+| `git log -n <number a>` | view just one change that happened at ath commit from last commit |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 | `git diff [commitID1] [commitID2]` | Preview changes b/w two commits |
 | `git diff --staged` | Preview changes b/w edited file and the file before editing at the staging area |
