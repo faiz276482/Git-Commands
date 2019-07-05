@@ -84,6 +84,13 @@ _A list of my commonly used Git commands_
 | Command | Description |
 | ------- | ----------- |
 | `git rebase` | Reapply commits on top of another base tip |
-
+| `git rebase --onto <newbase>` | Starting point at which to create the new commits. If the --onto option is not specified, the starting point is <upstream>. May be any valid commit, and not just an existing branch name.As a special case, you may use "A...B" as a shortcut for the merge base of A and B if there is exactly one merge base. You can leave out at most one of A and B, in which case it defaults to HEAD. |
+| `git rebase <upstream>` | Upstream branch to compare against. May be any valid commit, not just an existing branch name. Defaults to the configured upstream for the current branch |
+| `git rebase <branch_name>` | Working branch; defaults to HEAD. |
+| `git rebase --continue` | Restart the rebasing process after having resolved a merge conflict. |
+| `git rebase --abort` | Abort the rebase operation and reset HEAD to the original branch. If <branch> was provided when the rebase operation was started, then HEAD will be reset to <branch>. Otherwise HEAD will be reset to where it was when the rebase operation was started. |
+| `git rebase --quit` | Abort the rebase operation but HEAD is not reset back to the original branch. The index and working tree are also left unchanged as a result. |
+| `git rebase --keep-empty` | Keep the commits that do not change anything from its parents in the result |
+| `git rebase --skip` | Restart the rebasing process by skipping the current patch. |
 
 *If you are interested in learning more commands, have a look at https://git-scm.com/docs*
