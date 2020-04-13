@@ -79,6 +79,27 @@ _A list of my commonly used Git commands_
 | `git diff [commitID1] [commitID2]` | Preview changes b/w two commits |
 | `git diff --staged` | Preview changes b/w edited file and the file before editing at the staging area |
 
+### Ignoring files locally
+
+| Command | Description |
+| ------- | ----------- |
+| `touch .gitignore` | This will create .gitignore file locally if it does not exits |
+| `echo file.extension >> .gitignore` | This will add file.extension in .gitignore |
+| `echo \path\file.extension >> .gitignore` | This will add \path\file.extension in .gitignore |
+You can commit it now without any problems
+
+### Ignoring files globally
+
+| Command | Description |
+| ------- | ----------- |
+| `cd ~` | This will navigate you to the root directory of the user | 
+| `git config --get core.excludesfile` | Run it and check if it returns this `~/.gitignore` or not. If it returns that skip the row below this row and goto the next row of table | 
+| `touch ~/.gitignore` | This will create a .gitignore file in the root directory |
+| `git config --global core.excludesfile '~/.gitignore` | This will add it in congig that in future all the contents of the .gitignore file should nevevr be staged |
+| `echo -e 'file.extension' >> ~/.gitignore` | This will add file.extension in global .gitignore |
+| `echo \path\file.extension >> ~/.gitignore` | This will add \path\file.extension in .gitignore |
+You can commit it now without any problems
+
 ### Patching
 
 | Command | Description |
