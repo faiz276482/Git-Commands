@@ -86,6 +86,7 @@ _A list of my commonly used Git commands_
 | `touch .gitignore` | This will create .gitignore file locally if it does not exits |
 | `echo file.extension >> .gitignore` | This will add file.extension in .gitignore |
 | `echo \path\file.extension >> .gitignore` | This will add \path\file.extension in .gitignore |
+
 You can commit it now without any problems
 
 ### Ignoring files globally
@@ -98,6 +99,7 @@ You can commit it now without any problems
 | `git config --global core.excludesfile '~/.gitignore` | This will add it in congig that in future all the contents of the .gitignore file should nevevr be staged |
 | `echo -e 'file.extension' >> ~/.gitignore` | This will add file.extension in global .gitignore |
 | `echo \path\file.extension >> ~/.gitignore` | This will add \path\file.extension in .gitignore |
+
 You can commit it now without any problems
 
 ### Patching
